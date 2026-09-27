@@ -1,0 +1,14 @@
+# Temporary and scratch files
+extract.py
+extracted_site.txt
+extracted_projects.txt
+projects_page.html
+ld_json.json
+all_projects_details.json
+summary_projects.md
+ten_readme.md
+*.tmp
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db
