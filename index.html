@@ -4,24 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ace of Swords ・ AceOFSwordsr</title>
-  <meta name="description" content="single blade ・ pure signal ・ razor execution ・ best parsed over an encrypted wire ♡">
+  <meta name="description" content="element air ・ the intellect ・ razor steel ・ more reason, less emotion ♡">
   <link rel="icon" href="assets/ace-of-swords-rws.jpg" type="image/jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #07080b;
-      --bg-surface: #0e1118;
-      --bg-card: rgba(15, 18, 26, 0.75);
-      --bg-card-hover: rgba(22, 27, 39, 0.9);
-      --border: rgba(255, 255, 255, 0.08);
-      --border-accent: rgba(0, 245, 155, 0.4);
-      --primary: #00f59b;
-      --primary-dim: rgba(0, 245, 155, 0.15);
-      --primary-glow: rgba(0, 245, 155, 0.25);
-      --cyan: #38bdf8;
-      --cyan-dim: rgba(56, 189, 248, 0.12);
+      --bg: #06080e;
+      --bg-surface: #0c101a;
+      --bg-card: rgba(14, 18, 28, 0.78);
+      --bg-card-hover: rgba(19, 25, 40, 0.92);
+      --border: rgba(56, 189, 248, 0.12);
+      --border-accent: rgba(56, 189, 248, 0.45);
+      --primary: #38bdf8;           /* Element Air cyan */
+      --primary-dim: rgba(56, 189, 248, 0.14);
+      --primary-glow: rgba(56, 189, 248, 0.25);
+      --laurel: #00f59b;            /* Laurel of Victory */
+      --laurel-dim: rgba(0, 245, 155, 0.12);
+      --crown: #f59e0b;             /* Crown Gold */
+      --steel: #f8fafc;             /* Blade Edge */
       --text: #f1f5f9;
       --text-muted: #94a3b8;
       --text-dim: #64748b;
@@ -53,25 +55,25 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Ambient Cyberpunk Grid Overlay */
+    /* Ambient Air Currents Grid & Mist */
     body::before {
       content: "";
       position: fixed;
       inset: 0;
       background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
-      background-size: 36px 36px;
+        linear-gradient(to right, rgba(56, 189, 248, 0.022) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(56, 189, 248, 0.022) 1px, transparent 1px);
+      background-size: 38px 38px;
       pointer-events: none;
       z-index: -1;
     }
 
-    /* Radial glow vignette */
+    /* High-Altitude Celestial Atmosphere (Element Air) */
     body::after {
       content: "";
       position: fixed;
       inset: 0;
-      background: radial-gradient(ellipse at top center, rgba(0, 245, 155, 0.04) 0%, transparent 70%);
+      background: radial-gradient(ellipse at 50% 0%, rgba(56, 189, 248, 0.08) 0%, rgba(14, 165, 233, 0.03) 45%, transparent 75%);
       pointer-events: none;
       z-index: -1;
     }
@@ -90,7 +92,7 @@
 
     .typewriter-banner {
       font-family: var(--font-mono);
-      font-size: 1.12rem;
+      font-size: 1.1rem;
       color: var(--primary);
       min-height: 2.6rem;
       margin-bottom: 1.25rem;
@@ -109,7 +111,7 @@
       margin-left: 6px;
       animation: blink 0.9s infinite;
       vertical-align: middle;
-      box-shadow: 0 0 8px var(--primary);
+      box-shadow: 0 0 10px var(--primary);
     }
 
     @keyframes blink {
@@ -170,14 +172,14 @@
       display: inline-block;
       border-radius: var(--radius-lg);
       padding: 6px;
-      background: linear-gradient(135deg, rgba(0, 245, 155, 0.3), rgba(255, 255, 255, 0.05), rgba(56, 189, 248, 0.2));
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 245, 155, 0.12);
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.35), rgba(255, 255, 255, 0.08), rgba(0, 245, 155, 0.25));
+      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.85), 0 0 35px var(--primary-glow);
       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
     }
 
     .tarot-frame:hover {
       transform: scale(1.025) translateY(-5px) rotateX(2deg);
-      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.9), 0 0 45px rgba(0, 245, 155, 0.25);
+      box-shadow: 0 24px 55px rgba(0, 0, 0, 0.95), 0 0 50px rgba(56, 189, 248, 0.35);
     }
 
     .tarot-card {
@@ -212,6 +214,15 @@
 
     .manifesto p + p {
       margin-top: 1rem;
+    }
+
+    .manifesto-quote {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
     }
 
     /* Interactive Filters */
@@ -255,7 +266,7 @@
     }
 
     .filter-btn.active {
-      color: #042f22;
+      color: #032541;
       background: var(--primary);
       font-weight: 600;
       box-shadow: 0 0 12px var(--primary-glow);
@@ -390,14 +401,14 @@
       padding: 0.18rem 0.5rem;
       border-radius: 4px;
       background: var(--primary-dim);
-      color: #6ee7b7;
-      border: 1px solid rgba(0, 245, 155, 0.2);
+      color: #7dd3fc;
+      border: 1px solid rgba(56, 189, 248, 0.25);
     }
 
-    .tag-alt {
-      background: var(--cyan-dim);
-      color: #7dd3fc;
-      border-color: rgba(56, 189, 248, 0.2);
+    .tag-laurel {
+      background: var(--laurel-dim);
+      color: #6ee7b7;
+      border-color: rgba(0, 245, 155, 0.25);
     }
 
     /* Toolbox */
@@ -418,7 +429,7 @@
     .toolbox-card h4 {
       font-family: var(--font-mono);
       font-size: 0.9rem;
-      color: var(--cyan);
+      color: var(--primary);
       margin-bottom: 0.5rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -437,8 +448,8 @@
     .modal-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(8px);
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(10px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -455,7 +466,7 @@
     }
 
     .modal-content {
-      background: #0d1017;
+      background: #0c101a;
       border: 1px solid var(--border-accent);
       border-radius: var(--radius-lg);
       max-width: 780px;
@@ -511,7 +522,7 @@
 
     .modal-body h4 {
       font-family: var(--font-mono);
-      color: var(--cyan);
+      color: var(--primary);
       margin: 1.25rem 0 0.5rem;
     }
 
@@ -572,13 +583,13 @@
       </div>
 
       <h1>ace of swords ・ AceOFSwordsr</h1>
-      <p class="tagline">single blade ・ pure signal ・ razor execution ・ <span>best parsed over an encrypted wire ♡</span></p>
+      <p class="tagline">element air ・ the intellect ・ razor steel ・ <span>more reason, less emotion ♡</span></p>
 
       <div class="badge-row">
-        <a href="https://github.com/AceOfSwordsr" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/shipped%20products-11-00f59b?style=for-the-badge&logo=github&logoColor=042f22" alt="shipped products"></a>
-        <a href="https://github.com/AceOfSwordsr/AceOfSwordsr/blob/main/PROJECTS.md" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/project%20index-verified-00f59b?style=for-the-badge&logo=readme-dot-cc&logoColor=042f22" alt="project index"></a>
-        <a href="#toolbox"><img src="https://img.shields.io/badge/Next.js%20%2B%20Django%20%2B%20TypeScript%20%2B%20WP-00f59b?style=for-the-badge&logo=nextdotjs&logoColor=042f22" alt="tech stack"></a>
-        <a href="javascript:void(0)" onclick="openModal()"><img src="https://img.shields.io/badge/anonymous%20cipher-unfiltered%20logs-00f59b?style=for-the-badge&logo=ghost&logoColor=042f22" alt="anonymous words"></a>
+        <a href="https://www.astrolink.com/en/tarot/suit/swords" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/suit%20of%20swords-element%20air-38bdf8?style=for-the-badge&logo=target&logoColor=041b2d" alt="Astrolink Suit of Swords"></a>
+        <a href="https://github.com/AceOfSwordsr" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/crown%20of%20victory-11%20shipped-00f59b?style=for-the-badge&logo=github&logoColor=042f22" alt="shipped products"></a>
+        <a href="https://github.com/AceOfSwordsr/AceOfSwordsr/blob/main/PROJECTS.md" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/project%20index-verified-38bdf8?style=for-the-badge&logo=readme-dot-cc&logoColor=041b2d" alt="project index"></a>
+        <a href="javascript:void(0)" onclick="openModal()"><img src="https://img.shields.io/badge/anonymous%20cipher-unfiltered%20logs-38bdf8?style=for-the-badge&logo=ghost&logoColor=041b2d" alt="anonymous words"></a>
       </div>
 
       <div class="tarot-wrapper">
@@ -589,8 +600,9 @@
     </header>
 
     <div class="manifesto">
-      <p>everything published here is documentation-first. each system and codebase carries verified specifications: what the problem is, what architecture was chosen, and how it survives in the wild under real client loads. nothing is presented as more finished than it is, and the raw design decisions stay visible because they are the honest part.</p>
-      <p>the taste is the same across all of it: when an architecture demands 50 unnecessary cloud dependencies, strip it down to a lean single-binary or static edge runtime. when an IELTS candidate needs real-time speaking evaluation, pipe live microphone audio through the Web Audio API directly to conversational AI without latency penalties. when commerce moves farm harvests or industrial metals, make database transactions rock solid and pages render under 400ms. one sharp cut through the noise. lean runtimes, clean sockets, quiet machines.</p>
+      <div class="manifesto-quote">MINOR ARCANA I ・ THE INTELLECT ・ ELEMENT AIR</div>
+      <p>everything published here is documentation-first. in the tarot, the <strong>Ace of Swords</strong> represents the <strong>Element of Air</strong> — logic, rationality, and pure thought as the source of all action. a hand emerges from the celestial clouds wielding an upright double-edged blade crowned with the golden laurels of victory. beneath stretches an arid mountain landscape, reflecting cold reason cutting through fog: a mandate to build with <strong>more reason and less emotion</strong>.</p>
+      <p>the taste is the same across all of it: when an architecture demands 50 bloated cloud dependencies, slice it down to a lean single-binary or static edge runtime. when an IELTS candidate needs real-time speaking evaluation, pipe live microphone audio through the Web Audio API directly to conversational AI without latency penalties. when commerce moves farm harvests or industrial metals, make database transactions rock solid and pages render under 400ms. a single upright blade. cold reason, clean sockets, quiet machines.</p>
     </div>
 
     <!-- Filter Bar -->
@@ -631,7 +643,7 @@
           <span class="tag">Next.js</span>
           <span class="tag">React</span>
           <span class="tag">Web Audio API</span>
-          <span class="tag">AI Audio Streams</span>
+          <span class="tag tag-laurel">Crown of Speech AI</span>
         </div>
       </article>
 
@@ -660,7 +672,7 @@
             <a href="https://sorkhdan.ir" target="_blank" rel="noopener noreferrer" class="project-title">sorkhdan ↗</a>
             <span class="project-badge">sorkhdan.ir</span>
           </div>
-          <span class="tag-alt tag">PWA Storefront</span>
+          <span class="tag tag-laurel">PWA Storefront</span>
         </div>
         <p class="project-desc">progressive web application (PWA) storefront for authentic Qaenat saffron and barberry — 100% direct-from-farm pipeline, installable home-screen app, certified lab quality certificates (crocin 268+), interactive dosage calculation tool, and ice-shock brewing engine.</p>
         <div class="project-tags">
@@ -678,7 +690,7 @@
             <a href="https://ekramshop.com" target="_blank" rel="noopener noreferrer" class="project-title">ekramshop ↗</a>
             <span class="project-badge">ekramshop.com</span>
           </div>
-          <span class="tag-alt tag">Technical SEO</span>
+          <span class="tag tag-laurel">Technical SEO</span>
         </div>
         <p class="project-desc">technical SEO architecture and B2B industrial refrigeration marketplace — interactive live copper pipe price calculator and commodities tracker, canonical taxonomy eliminating keyword cannibalization, structured Schema.org microdata, ranking #1 in national competitive keywords.</p>
         <div class="project-tags">
@@ -696,7 +708,7 @@
             <a href="https://gallerychiic.com" target="_blank" rel="noopener noreferrer" class="project-title">gallerychiic ↗</a>
             <span class="project-badge">gallerychiic.com</span>
           </div>
-          <span class="tag-alt tag">Storefront</span>
+          <span class="tag">Storefront</span>
         </div>
         <p class="project-desc">interior aesthetics and lifestyle storefront — editorial cream UI layout, responsive product taxonomy, Instagram-to-cart conversion funnel, and low-friction mobile checkout.</p>
         <div class="project-tags">
@@ -713,7 +725,7 @@
             <a href="https://rimelcosmetics.ir" target="_blank" rel="noopener noreferrer" class="project-title">rimelcosmetics ↗</a>
             <span class="project-badge">rimelcosmetics.ir</span>
           </div>
-          <span class="tag-alt tag">E-commerce</span>
+          <span class="tag">E-commerce</span>
         </div>
         <p class="project-desc">cosmetics and beauty e-commerce platform — lightweight UI system, product cataloging, flash-campaign infrastructure, and autonomous store operator management panel.</p>
         <div class="project-tags">
@@ -747,7 +759,7 @@
             <a href="https://apps.cadinu.io" target="_blank" rel="noopener noreferrer" class="project-title">cadinu ↗</a>
             <span class="project-badge">apps.cadinu.io</span>
           </div>
-          <span class="tag">DeFi Suite</span>
+          <span class="tag tag-laurel">DeFi Suite</span>
         </div>
         <p class="project-desc">multi-module DeFi dApp ecosystem (CadinuSwap) — MultiSwap engine, liquidity farm pools, yield staking, on-chain lottery contracts, NFT showcase, liquidity locker, trading tournaments, and community governance.</p>
         <div class="project-tags">
@@ -848,10 +860,11 @@
         <button class="btn-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
       </div>
       <div class="modal-body">
-        <blockquote>"a sword does not deliberate before striking. it cuts because it was honed to a single micron. build software with the same sharpness: remove the dead weight, verify the edge, and let the work speak for itself."</blockquote>
+        <blockquote>"The Ace of Swords symbolizes the power of thought and heralds a powerful new beginning. Associated with the Element Air, it represents logic, rationality, and thought as the source of all action. The hand from the clouds holds the sword upright crowned with laurels of victory, rising over an arid landscape: a timeless mandate to act with more reason and less emotion."</blockquote>
         
-        <h4>I. The Doctrine of the Single Blade</h4>
-        <p>Modern web engineering is drowning in artificial complexity. Never reach for an external library when the browser has a native standard. If the Web Audio API can stream live PCM audio chunks from the microphone, you do not need a bloated closed-source SDK. If a modern browser supports <code>navigator.serviceWorker</code>, you have an installable application without an app store middleman.</p>
+        <h4>I. The Doctrine of the Single Blade & Element Air</h4>
+        <p>Modern web engineering is drowning in artificial sentimentality and unneeded abstraction. Developers attach emotional weight to frameworks, pull in 40MB dependency trees to center a button, and wrap simple business needs in convoluted architectures that delay real-world delivery.</p>
+        <p>The Ace of Swords is the razor of clarity: thought is the source of all action. Never reach for an external abstraction when the browser has a native standard. If the Web Audio API can stream live PCM audio chunks from the microphone, you do not need a bloated closed-source SDK. If a modern browser supports <code>navigator.serviceWorker</code>, you have an installable application without an app store middleman.</p>
 
         <h4>II. The Three Uncompromising Phases of Delivery</h4>
         <p><strong>Phase 01: Scope & Boundaries</strong> — Define non-negotiables, routes, database models, and API interfaces before writing heavy logic.</p>
@@ -870,12 +883,12 @@
   </div>
 
   <script>
-    // Typewriter Simulation
+    // Astrolink Ace of Swords Typewriter Simulation
     const lines = [
-      "ace of swords ・ single blade cutting through the noise",
-      "lean runtimes ・ verified signals ・ sharp execution",
-      "11 real-world products ・ documentation first ・ zero bloat",
-      "truth over illusion ・ see you on the sharp edge ♡"
+      "ace of swords ・ element air ・ the power of thought",
+      "complete mental clarity ・ razor steel cutting through noise",
+      "the crown of victory ・ 11 verified production systems",
+      "more reason, less emotion ・ see you on the sharp edge ♡"
     ];
 
     let lineIndex = 0;
