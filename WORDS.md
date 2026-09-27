@@ -1,21 +1,25 @@
 # anonymous words & axioms ・ AceOFSwordsr
 
 *unfiltered field transmissions on systems, craft, and shipping code*
+*archetype: Ace of Swords (Minor Arcana I) ・ Element Air ・ The Intellect*
+*source reference: [Astrolink Suit of Swords](https://www.astrolink.com/en/tarot/suit/swords)*
 
 ---
 
-> *"a sword does not deliberate before striking. it cuts because it was honed to a single micron. build software with the same sharpness: remove the dead weight, verify the edge, and let the work speak for itself."*
+> *"The Ace of Swords symbolizes the power of thought and heralds a powerful new beginning. Associated with the Element Air, it represents logic, rationality, and thought as the source of all action. The hand from the clouds holds the sword upright crowned with laurels of victory, rising over an arid landscape: a timeless mandate to act with more reason and less emotion."*
 
 ---
 
-## 🗡️ I. The Doctrine of the Single Blade
+## 🗡️ I. The Doctrine of the Single Blade & Element Air
 
-Modern web engineering is drowning in artificial complexity. Teams pull in 40MB node module dependency trees to center a button, spin up Kubernetes clusters to host static landing pages, and bury clients beneath opaque sprint ceremonies that produce no runnable artifacts.
+In the tarot tradition, Swords govern the realm of ideas, mental models, intellect, and action. They are the most decisive suit because thought precedes every tangible creation.
 
-The **Ace of Swords** is the counter-measure:
-1. **Never reach for an external library when the browser has a native standard.** If the Web Audio API can stream live PCM audio chunks from the microphone, you do not need a bloated closed-source SDK. If a modern browser supports `navigator.serviceWorker` and `manifest.webmanifest`, you have an installable application without an app store middleman.
-2. **Never build a generic framework when you only have one concrete problem.** Write the query, test the edge condition, ship the feature, and walk away.
-3. **If a script can solve a client's pricing update in 40 lines of clean code, do not install three conflicting SaaS plugins.** Small binaries, clean sockets, quiet machines.
+Modern web engineering is drowning in artificial sentimentality and unneeded abstraction. Developers attach emotional weight to frameworks, pull in 40MB dependency trees to center a button, and wrap simple business needs in convoluted architectures that delay real-world delivery.
+
+The **Ace of Swords** is the razor of clarity:
+1. **Thought is the source of everything else.** Before writing a line of code, establish the invariant truths of the problem. If the logic is muddy, no framework will save it.
+2. **Never reach for an external abstraction when the browser has a native standard.** If the Web Audio API can stream live PCM audio chunks from the microphone, you do not need a bloated closed-source SDK. If a modern browser supports `navigator.serviceWorker` and `manifest.webmanifest`, you have an installable application without an app store middleman.
+3. **More reason, less emotion.** Discard code the second it ceases to serve the architecture. Dead code, redundant micro-packages, and speculative features are dead weight on the blade.
 
 ---
 

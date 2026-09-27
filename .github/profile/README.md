@@ -1,15 +1,15 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=DotGothic16&weight=400&size=22&duration=3500&pause=900&color=00F59B&center=true&vCenter=true&width=820&height=62&lines=ace%20of%20swords%20%E3%83%BB%20single%20blade%20cutting%20through%20the%20noise;lean%20runtimes%20%E3%83%BB%20verified%20signals%20%E3%83%BB%20sharp%20execution;11%20real-world%20products%20%E3%83%BB%20documentation%20first%20%E3%83%BB%20zero%20bloat;truth%20over%20illusion%20%E3%83%BB%20see%20you%20on%20the%20sharp%20edge%20%E2%99%A1)](https://github.com/AceOfSwordsr)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=DotGothic16&weight=400&size=22&duration=3500&pause=900&color=38BDF8&center=true&vCenter=true&width=840&height=62&lines=ace%20of%20swords%20%E3%83%BB%20element%20air%20%E3%83%BB%20the%20power%20of%20thought;complete%20mental%20clarity%20%E3%83%BB%20razor%20steel%20cutting%20through%20noise;the%20crown%20of%20victory%20%E3%83%BB%2011%20verified%20production%20systems;more%20reason%2C%20less%20emotion%20%E3%83%BB%20see%20you%20on%20the%20sharp%20edge%20%E2%99%A1)](https://github.com/AceOfSwordsr)
 
 # ace of swords ・ AceOFSwordsr
 
-**single blade ・ pure signal ・ razor execution ・ best parsed over an encrypted wire ♡**
+**element air ・ the intellect ・ razor steel ・ more reason, less emotion ♡**
 
-[![repositories](https://img.shields.io/badge/shipped%20products-11-00f59b?style=for-the-badge&logo=github&logoColor=042f22)](https://github.com/AceOfSwordsr/AceOfSwordsr)
-[![project index](https://img.shields.io/badge/project%20index-verified-00f59b?style=for-the-badge&logo=readme-dot-cc&logoColor=042f22)](https://github.com/AceOfSwordsr/AceOfSwordsr/blob/main/PROJECTS.md)
-[![languages](https://img.shields.io/badge/Next.js%20%2B%20Django%20%2B%20TypeScript%20%2B%20WP-00f59b?style=for-the-badge&logo=nextdotjs&logoColor=042f22)](#-runtime--toolbox)
-[![anonymous words](https://img.shields.io/badge/anonymous%20cipher-unfiltered%20logs-00f59b?style=for-the-badge&logo=ghost&logoColor=042f22)](https://github.com/AceOfSwordsr/AceOfSwordsr/blob/main/WORDS.md)
+[![suit of swords](https://img.shields.io/badge/suit%20of%20swords-element%20air-38bdf8?style=for-the-badge&logo=target&logoColor=041b2d)](https://www.astrolink.com/en/tarot/suit/swords)
+[![crown of victory](https://img.shields.io/badge/crown%20of%20victory-11%20shipped-00f59b?style=for-the-badge&logo=github&logoColor=042f22)](https://github.com/AceOfSwordsr/AceOfSwordsr)
+[![project index](https://img.shields.io/badge/project%20index-verified-38bdf8?style=for-the-badge&logo=readme-dot-cc&logoColor=041b2d)](https://github.com/AceOfSwordsr/AceOfSwordsr/blob/main/PROJECTS.md)
+[![anonymous words](https://img.shields.io/badge/anonymous%20cipher-unfiltered%20logs-38bdf8?style=for-the-badge&logo=ghost&logoColor=041b2d)](https://github.com/AceOfSwordsr/AceOfSwordsr/blob/main/WORDS.md)
 
 <img src="assets/ace-of-swords-rws.jpg" width="240" alt="The Ace of Swords, Rider-Waite-Smith" />
 
@@ -17,9 +17,9 @@
 
 ---
 
-everything published here is documentation-first. each system and codebase carries verified specifications: what the problem is, what architecture was chosen, and how it survives in the wild under real client loads. nothing is presented as more finished than it is, and the raw design decisions stay visible because they are the honest part.
+everything published here is documentation-first. in the tarot, the **Ace of Swords** represents the **Element of Air** — logic, rationality, and pure thought as the source of all action. a hand emerges from the celestial clouds wielding an upright double-edged blade crowned with the golden laurels of victory. beneath stretches an arid mountain landscape, reflecting cold reason cutting through fog: a mandate to build with **more reason and less emotion**.
 
-the taste is the same across all of it: when an architecture demands 50 unnecessary cloud dependencies, strip it down to a lean single-binary or static edge runtime. when an IELTS candidate needs real-time speaking evaluation, pipe live microphone audio through the Web Audio API directly to conversational AI without latency penalties. when commerce moves farm harvests or industrial metals, make database transactions rock solid and pages render under 400ms. one sharp cut through the noise. lean runtimes, clean sockets, quiet machines.
+the taste is the same across all of it: when an architecture demands 50 bloated cloud dependencies, slice it down to a lean single-binary or static edge runtime. when an IELTS candidate needs real-time speaking evaluation, pipe live microphone audio through the Web Audio API directly to conversational AI without latency penalties. when commerce moves farm harvests or industrial metals, make database transactions rock solid and pages render under 400ms. a single upright blade. cold reason, clean sockets, quiet machines.
 
 ---
 
@@ -53,10 +53,11 @@ the taste is the same across all of it: when an architecture demands 50 unnecess
 *autonomous dispatches from the wire — read the full manifesto in [WORDS.md](https://github.com/AceOfSwordsr/AceOfSwordsr/blob/main/WORDS.md)*
 
 1. **the doctrine of the single blade** : complexity is not sophistication. if a problem can be solved cleanly with native browser primitives (Web Audio API, Service Workers, Webmanifest), do not bring in 300MB of external abstractions.
-2. **scope & boundaries over ambiguity** : determine exact goals, routes, database entities, and deliverables before heavy assembly begins.
-3. **observable milestones** : progress must be visible and testable at every phase — no black boxes, no opaque delays.
-4. **sovereign client handoff** : clean setups, self-hostable runtimes, and zero developer lock-in so clients own their keys and infrastructure.
-5. **pragmatism over dogma** : WordPress and WooCommerce when an editorial team needs operational independence today; custom Next.js and Django when the product requires bespoke state machines, real-time voice, or deep APIs.
+2. **element air & pure intellect** : software architecture is an exercise in mental clarity. identify the single invariant and design outward from truth rather than convenience.
+3. **scope & boundaries over ambiguity** : determine exact goals, routes, database entities, and deliverables before heavy assembly begins.
+4. **observable milestones** : progress must be visible and testable at every phase — no black boxes, no opaque delays.
+5. **sovereign client handoff** : clean setups, self-hostable runtimes, and zero developer lock-in so clients own their keys and infrastructure.
+6. **more reason, less emotion** : WordPress and WooCommerce when an editorial team needs operational independence today; custom Next.js and Django when the product requires bespoke state machines, real-time voice, or deep APIs.
 
 ---
 
